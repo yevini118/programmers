@@ -1,8 +1,6 @@
 def solution(clothes):
     
-    ctypes = set(clothe[1] for clothe in clothes)
-
-    clothes_set = {ctype:[] for ctype in ctypes}
+    clothes_set = {clothe[1]:[] for clothe in clothes}
 
     for clothe in clothes:
         clothes_set[clothe[1]].append(clothe[0])
