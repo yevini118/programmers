@@ -11,6 +11,6 @@ def solution(new_id):
         new_id = new_id[0:15].rstrip('.')
     
     if len(new_id) <= 2: #7단계
-        new_id = new_id + new_id[-1] * (3-len(new_id))
+        new_id += new_id[-1] * (3-len(new_id))
 
     return new_id
